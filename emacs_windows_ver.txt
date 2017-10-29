@@ -1,25 +1,33 @@
-;; ƒ[ƒhƒpƒX‚Ìİ’è
+;; ãƒ­ãƒ¼ãƒ‰ãƒ‘ã‚¹ã®è¨­å®š
 (let ((default-directory (expand-file-name "~/.emacs.d/site-lisp")))
   (add-to-list 'load-path default-directory)
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
       (normal-top-level-add-subdirs-to-load-path)))
 
-;; ƒXƒ^[ƒgƒAƒbƒvƒƒbƒZ[ƒW‚ğ•\¦‚³‚¹‚È‚¢
+;; èµ·å‹•æ™‚ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®å¤‰æ›´
+(setq default-directory "~/")
+
+;;----
+;; ãƒ“ãƒ¼ãƒ—éŸ³ã‚’æ¶ˆã™
+;;----
+(setq ring-bell-function 'ignore)
+
+;; ã‚¹ã‚¿ãƒ¼ãƒˆã‚¢ãƒƒãƒ—ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã•ã›ãªã„
 ;(setq inhibit-startup-message t)
 
-;; ƒoƒbƒNƒAƒbƒvƒtƒ@ƒCƒ‹‚ğì¬‚³‚¹‚È‚¢
+;; ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã•ã›ãªã„
 (setq make-backup-files nil)
 
-;; I—¹‚ÉƒI[ƒgƒZ[ƒuƒtƒ@ƒCƒ‹‚ğíœ‚·‚é
+;; çµ‚äº†æ™‚ã«ã‚ªãƒ¼ãƒˆã‚»ãƒ¼ãƒ–ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã™ã‚‹
 (setq delete-auto-save-files t)
 
-;; —ñ”‚ğ•\¦‚·‚é
+;; åˆ—æ•°ã‚’è¡¨ç¤ºã™ã‚‹
 (column-number-mode t)
 
-;; s”‚ğ•\¦‚·‚é
+;; è¡Œæ•°ã‚’è¡¨ç¤ºã™ã‚‹
 (global-linum-mode t)
 
-;; ƒXƒy[ƒXAƒ^ƒu‚È‚Ç‚ğ‰Â‹‰»‚·‚é
+;; ã‚¹ãƒšãƒ¼ã‚¹ã€ã‚¿ãƒ–ãªã©ã‚’å¯è¦–åŒ–ã™ã‚‹
 ;(global-whitespace-mode 1)
 
 
